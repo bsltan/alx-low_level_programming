@@ -10,7 +10,7 @@ char *_strdup(char *str)
 {
 	int length = 0;
 	char *ret;
-	
+
 	if (str == NULL)
 		return (NULL);
 	while (*str++)
@@ -34,7 +34,7 @@ char *_strdup(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d = malloc(sizeof(dog_t));
-	
+
 	if (!d)
 		return (NULL);
 	d->name = _strdup(name);
